@@ -12,7 +12,7 @@ do_install() {
         install -d "${D}/media/rfs/rw"
 }
 
-FILES_${PN} += " /init /media/rfs"
+FILES:${PN} += " /init /media/rfs"
 
 # Due to kernel dependency
 PACKAGE_ARCH = "${MACHINE_ARCH}"
